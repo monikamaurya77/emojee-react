@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
+:root {
+  --pink: #FE938C;
+  --lightpink: #E6B89C;
+  --dullwhite: #EAD2AC;
+  --lightblue: #9CAFB7;
+  --blue: #4281A4;
+}
+
+body{
+  background-color: var(--dullwhite);
+}
+
+body,h1,h2,h3,h4,h5,h6,p {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Joan', serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem;
+  gap: 1.4rem;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.items {
+  background-color: var(--lightblue);
+  border-radius: 5px;;
+  display: inline-block;
+  width: 12rem;
+  align-self: stretch;
+  text-align: center;
+  padding: 0.8rem 0.3rem; /*top-bottom=0.8rrem; left-rigth=0.3rem*/
+  transition: all 0.2s linear;
+}
+
+.items:hover {
+  background-color: var(--pink);
+  box-shadow: 7px 7px 4px var(--lightpink);  /* X axis Yaxis BlurRadius*/
+  color: var(--blue);
+  transform: scale(1.1);
+  border-radius: 1.3rem;
+}
+.emoji{
+  font-size: 300%;
+}
+/*
+.item:hover ,.emoji {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d ;
+} */
+
+.description{
+  font-size: large;
+}
+
+nav{
+  background-color: var(--pink);
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.1rem 0.75rem;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.4);
+}
+
+nav > h2 {
+  display:inline;
+}
+
+nav > a {
+  float:right;
+  padding-top: 2.5px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.search{
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.search > input {
+  border-radius: 5px;
+  border: 2px solid var(--lightblue);
+  font-size: 130%;
+  margin-bottom: 0.8rem;
+}
+
+.search > input:hover{
+  color: var(--lightpink);
+}
+
+body{
+  scrollbar-color: var(--pink);
+}
+
+.no-result {
+   text-align: center;
+   font-size: 170%;
+}
+
+.copied, .copied:hover{
+  background-color: var(--lightpink);
+}
+
